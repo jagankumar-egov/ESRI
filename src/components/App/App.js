@@ -1,13 +1,20 @@
 import React from "react";
-import { StyledApp, StyledH3 } from "./App-styled";
 import Map from "../Map";
 
 const App = () => {
   return (
-    <StyledApp>
-      <StyledH3>Test Map</StyledH3>
+    <div
+      style={{
+        height: "100%",
+        width: "100%",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "stretch"
+      }}
+    >
+      <h2>Test Map</h2>
       <Map />
-    </StyledApp>
+    </div>
   );
 };
 
