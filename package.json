@@ -5,18 +5,11 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
-    "@esri/react-arcgis": "5.1.0",
-    "calcite-react": "0.52.0",
-    "calcite-ui-icons-react": "0.20.0",
     "esri-loader": "2.14.0",
-    "moment": "2.27.0",
     "pubsub-js": "1.8.0",
-    "react": "16.12.0",
-    "react-dom": "16.12.0",
-    "react-redux": "7.2.0",
-    "react-scripts": "3.0.1",
-    "react-uuid": "1.0.2",
-    "redux": "4.0.5"
+    "react": "16.8.0",
+    "react-dom": "16.8.0",
+    "react-scripts": "3.0.1"
   },
   "devDependencies": {
     "typescript": "3.8.3"
