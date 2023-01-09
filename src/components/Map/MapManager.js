@@ -1,4 +1,3 @@
-import PubSub from "pubsub-js";
 import { loadModules } from "esri-loader";
 
 export default class MapManager {
@@ -9,23 +8,21 @@ export default class MapManager {
     this.container = container;
   }
 
-  initEventHandlers = () => {
-    PubSub.subscribe("Map/set-webmap", (msg, args) => {});
-  };
+  initEventHandlers = () => {};
 
   initView = async () => {
     try {
       if (!this.view) {
         const [Map, MapView] = await loadModules([
           "esri/Map",
-          "esri/views/MapView"
+          "esri/views/MapView",
         ]);
 
         this.view = new MapView({
           container: this.container,
           map: new Map({
-            basemap: "streets"
-          })
+            basemap: "streets",
+          }),
         });
         await this.view.when();
       }
